@@ -1,0 +1,70 @@
+﻿<Window x:Class="cShanty.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cShanty"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+
+    <!--// Base Grid //-->
+    <Grid Background="{DynamicResource Gray-100}">
+        <!-- Base Grid Columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+        <!--// Navigation Panel //-->
+        <Grid Grid.Column="0"
+              Background="{DynamicResource Gray-300}">
+
+            <!-- Navigation Panel Columns -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <!-- First Row -->
+            <Border Padding="15 20">
+                <StackPanel Grid.Row="0">
+
+                    <TextBlock Text="cShanty"
+                                   Foreground="{DynamicResource White}"
+                                   FontSize="22"
+                                   FontWeight="DemiBold"
+                                   HorizontalAlignment="Left"
+                                   MaxWidth="200" />
+                </StackPanel>
+            </Border>
+
+            <!-- Second Row -->s
+            <Grid Grid.Row="1">
+                <StackPanel>
+
+                    
+
+                </StackPanel>
+            </Grid>
+                
+            <!-- Third Row -->
+            <Grid Grid.Column="2">
+                
+            </Grid>
+                
+        </Grid>
+        
+        <!--// DashBoard Panel //-->
+        <Grid Grid.Column="1"
+              Background="{DynamicResource Gray-200}">
+            
+            
+            
+        </Grid>
+        
+    </Grid>
+    
+    
+</Window>

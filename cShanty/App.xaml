@@ -12,13 +12,22 @@
             <!--// Color Resources //-->
             <!-- White -->
             <SolidColorBrush x:Key="White" Color="#FFFFFF" />
+            
             <!-- Light Gray -->
             <SolidColorBrush x:Key="LightGray-100" Color="#B3B3B3" />
             <SolidColorBrush x:Key="LightGray-200" Color="#404040" />
+            
             <!-- Gray -->
             <SolidColorBrush x:Key="Gray-100" Color="#282828" />
             <SolidColorBrush x:Key="Gray-200" Color="#181818" />
             <SolidColorBrush x:Key="Gray-300" Color="#121212" />
+            
+            <!-- Blue -->
+            <SolidColorBrush x:Key="Blue-100" Color="#5DADE2 " />
+            <SolidColorBrush x:Key="Blue-200" Color="#3498DB " />
+            <SolidColorBrush x:Key="Blue-300" Color="#2E86C1 
+" />
+            
             
             
         </ResourceDictionary>

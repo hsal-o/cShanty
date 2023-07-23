@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:cShanty"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:CustomControls="clr-namespace:cShanty.CustomControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800">
 
@@ -32,19 +34,40 @@
                 <StackPanel Grid.Row="0">
 
                     <TextBlock Text="cShanty"
-                                   Foreground="{DynamicResource White}"
-                                   FontSize="22"
-                                   FontWeight="DemiBold"
-                                   HorizontalAlignment="Left"
-                                   MaxWidth="200" />
+                               Foreground="{DynamicResource White}"
+                               FontSize="22"
+                               FontWeight="DemiBold"
+                               HorizontalAlignment="Left"
+                               MaxWidth="200" />
                 </StackPanel>
             </Border>
 
-            <!-- Second Row -->s
+            <!-- Second Row -->
             <Grid Grid.Row="1">
                 <StackPanel>
-
                     
+                    <StackPanel Margin="0 0 0 25">
+                        <CustomControls:NavigationCoreButton GroupName="NavigationGroup" Text="Home" Kind="RegularHomeAlt"/>
+                        <CustomControls:NavigationCoreButton GroupName="NavigationGroup" Text="Browse" Kind="RegularArchive"/>
+                        <CustomControls:NavigationCoreButton GroupName="NavigationGroup" Text="Upload" Kind="RegularUpload" />
+
+
+                    </StackPanel>
+
+                    <StackPanel Margin="0 0 0 25">
+                        <TextBlock Text="PLAYLISTS" 
+                                   Foreground="{DynamicResource LightGray-200}"
+                                   FontSize="16"
+                                   FontWeight="DemiBold"
+                                   Margin="30 0 0 10"/>
+
+                            <StackPanel Height="500">
+                                <CustomControls:NavigationButton GroupName="NavigationGroup" Text="SUMMER 2020"/>
+                                <CustomControls:NavigationButton GroupName="NavigationGroup" Text="FALL 2021"/>
+                                <CustomControls:NavigationButton GroupName="NavigationGroup" Text="SPRING 2023"/>
+                            </StackPanel>
+                        
+                    </StackPanel>
 
                 </StackPanel>
             </Grid>

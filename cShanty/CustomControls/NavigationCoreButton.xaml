@@ -19,7 +19,7 @@
                     <ControlTemplate TargetType="RadioButton">
 
                         <Border x:Name="border"
-                                    Height="50"
+                                    Height="45"
                                     Width="200"
                                     BorderThickness="0"
                                     Background="Transparent">
@@ -27,7 +27,7 @@
                             <Grid>
                                 
                                 <Border x:Name="indicator"
-                                        Height="50"
+                                        Height="{Binding ActualHeight, ElementName=border}"
                                         Width="6"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center"

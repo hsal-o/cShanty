@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "cShanty": {
+      "commandName": "Project",
+      "workingDirectory": "$(ProjectDir)"
+    }
+  }
+}

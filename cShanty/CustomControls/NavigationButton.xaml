@@ -28,7 +28,7 @@
                                 
                                 <Border x:Name="indicator"
                                         Height="{Binding ActualHeight, ElementName=border}"
-                                        Width="6"
+                                        Width="4"
                                         HorizontalAlignment="Left"
                                         VerticalAlignment="Center"
                                         Background="{DynamicResource Blue-100}"

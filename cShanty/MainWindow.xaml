@@ -84,7 +84,66 @@
         <Grid Grid.Column="1"
               Background="{DynamicResource Gray-200}">
 
-            <ListBox x:Name="mediaListBox" Margin="10" />
+            <MediaElement x:Name="mediaElement" 
+                          LoadedBehavior="Manual"
+                          UnloadedBehavior="Manual"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="0"
+                        Padding="15">
+                    <ListBox x:Name="mediaListBox" 
+                             Margin="10" 
+                             SelectionChanged="mediaListBox_SelectionChanged"/>
+                </Border>
+
+                <StackPanel Grid.Row="1"
+                            Orientation="Vertical"
+                            HorizontalAlignment="Center">
+                    
+                    <TextBlock x:Name="txt_selectedSong"
+                               Text="selected song" 
+                               Foreground="White"
+                               FontWeight="DemiBold"
+                               FontSize="16"
+                               Margin="10"/>
+
+                    
+
+                </StackPanel>
+
+                <StackPanel Grid.Row="2"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            Margin="0 0 0 10">
+
+                    <CustomControls:PlayPauseButtonControl x:Name="playPauseButton"
+                                                           Click="PlayPauseButtonControl_Click"
+                                                           Width="50"
+                                                           Height="50"/>
+
+                    <!--<Button Content="PLAY" 
+                            Width="100"
+                            Margin="10"
+                            Click="playBtn_Click"/>
+                    
+                    <Button Content="PAUSE" 
+                            Width="100"
+                            Margin="10"
+                            Click="pauseBtn_Click"/>
+                    
+                    <Button Content="RESTART" 
+                            Width="100"
+                            Margin="10"
+                            Click="restartBtn_Click"/>-->
+                </StackPanel>
+                
+            </Grid>
 
         </Grid>
         
